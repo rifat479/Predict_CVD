@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Cardiovascular Disease Prediction</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Enter Your Information</h2>
+            <form id="predictionForm">
+                <div class="form-row">
+                    <!-- First Column -->
+                    <div class="column">
+                        <div class="form-row">
+                            <label for="Age"><b>Age:</b></label>
+                            <input type="number" id="Age" required />
+                        </div>
+                        <div class="form-row">
+                            <label for="Junk_Food"><b>Junk Food:</b></label>
+                            <input type="number" id="Junk_Food" min="0" max="1" required placeholder="1 for Yes, 0 for No" />
+                        </div>
+                        <div class="form-row">
+                            <label for="Salt"><b>Salt:</b></label>
+                            <input type="number" id="Salt" min="0" max="1" required placeholder="1 for Yes, 0 for No" />
+                        </div>
+                        <div class="form-row">
+                            <label for="Feel_Bad"><b>Feel Bad:</b></label>
+                            <input type="number" id="Feel_Bad" min="0" max="1" required placeholder="1 for Yes, 0 for No" />
+                        </div>
+                        <div class="form-row">
+                            <label for="Feel_zeroInt"><b>Feel Zero Interest:</b></label>
+                            <input type="number" id="Feel_zeroInt" min="0" max="1" required placeholder="1 for Yes, 0 for No" />
+                        </div>
+                        <div class="form-row">
+                            <label for="Feel_Hopeless"><b>Feel Hopeless:</b></label>
+                            <input type="number" id="Feel_Hopeless" min="0" max="1" required placeholder="1 for Yes, 0 for No" />
+                        </div>
+                        <div class="form-row">
+                            <label for="Smoke"><b>Smoke:</b></label>
+                            <input type="number" id="Smoke" min="0" max="1" required placeholder="1 for Yes, 0 for No" />
+                        </div>
+                    </div>
+
+                    <!-- Second Column -->
+                    <div class="column">
+                        <div class="form-row">
+                            <label for="Colestrol"><b>Cholesterol:</b></label>
+                            <input type="number" id="Colestrol" min="0" max="1" required placeholder="1 for Yes, 0 for No" />
+                        </div>
+                        <div class="form-row">
+                            <label for="BP"><b>Blood Pressure:</b></label>
+                            <input type="number" id="BP" min="0" max="1" required placeholder="1 for Yes, 0 for No" />
+                        </div>
+                        <div class="form-row">
+                            <label for="Heartdisease_family"><b>Family History:</b></label>
+                            <input type="number" id="Heartdisease_family" min="0" max="1" required placeholder="1 for Yes, 0 for No" />
+                        </div>
+                        <div class="form-row">
+                            <label for="Animia"><b>Anemia:</b></label>
+                            <input type="number" id="Animia" min="0" max="1" required placeholder="1 for Yes, 0 for No" />
+                        </div>
+                        <div class="form-row">
+                            <label for="Diabeties"><b>Diabetes:</b></label>
+                            <input type="number" id="Diabeties" min="0" max="1" required placeholder="1 for Yes, 0 for No" />
+                        </div>
+                        <div class="form-row">
+                            <label for="Hypertension"><b>Hypertension:</b></label>
+                            <input type="number" id="Hypertension" min="0" max="1" required placeholder="1 for Yes, 0 for No" />
+                        </div>
+                    </div>
+
+                    <!-- Third Column -->
+                    <div class="column">
+                        <div class="form-row">
+                            <label for="Sleepapnea"><b>Sleep Apnea:</b></label>
+                            <input type="number" id="Sleepapnea" min="0" max="1" required placeholder="1 for Yes, 0 for No" />
+                        </div>
+                        <div class="form-row">
+                            <label for="IrregularHeartRhythms"><b>Irregular Heart Rhythms:</b></label>
+                            <input type="number" id="IrregularHeartRhythms" min="0" max="1" required placeholder="1 for Yes, 0 for No" />
+                        </div>
+                        <div class="form-row">
+                            <label for="CoronaryDisease"><b>Coronary Disease:</b></label>
+                            <input type="number" id="CoronaryDisease" min="0" max="1" required placeholder="1 for Yes, 0 for No" />
+                        </div>
+                        <div class="form-row">
+                            <label for="Angina"><b>Angina:</b></label>
+                            <input type="number" id="Angina" min="0" max="1" required placeholder="1 for Yes, 0 for No" />
+                        </div>
+                        <div class="form-row">
+                            <label for="Take_ColesterolMedication"><b>Take Cholesterol Medication:</b></label>
+                            <input type="number" id="Take_ColesterolMedication" min="0" max="1" required placeholder="1 for Yes, 0 for No" />
+                        </div>
+                        <div class="form-row">
+                            <label for="BMI"><b>BMI:</b></label>
+                            <input type="number" id="BMI" step="any" required />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <button type="submit" class="predict-btn">Predict</button>
+                </div>
+            </form>
+            <div id="predictionResult" class="result"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with ❤️ for Cardiovascular Disease Prediction</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f9ff;
+    color: #333;
+    background-image: url('heart_img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-attachment: fixed;
+    padding: 50px 0;
+}
+
+header {
+    background-color: rgba(255, 111, 97, 0.9);
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 600;
+}
+
+main {
+    margin: 20px;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #FF6F61;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.form-row {
+    margin-bottom: 20px;
+}
+
+.column {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 3%;
+}
+
+label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid rgb(130, 189, 238);
+    background-color: rgb(130, 175, 238);
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: darkviolet;
+}
+
+button.predict-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.predict-btn:hover {
+    background-color: #f76262;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #FF6F61;
+    color: white;
+    margin-top: 30px;
+}
+
+.result {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+
